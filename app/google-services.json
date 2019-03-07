@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "727206740213",
+    "firebase_url": "https://alone-testing.firebaseio.com",
+    "project_id": "alone-testing",
+    "storage_bucket": "alone-testing.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727206740213:android:5bb6f2c4ebcaf011",
+        "android_client_info": {
+          "package_name": "staclogintest.kr.hs.mirim.alone_test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "727206740213-797tldq46sl5nqqifeats4cdv2ud7m98.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "staclogintest.kr.hs.mirim.alone_test",
+            "certificate_hash": "784da96773a65390d6c15626ae2ca526dcff31eb"
+          }
+        },
+        {
+          "client_id": "727206740213-c6hc7ms8aio02ddkj0hnhutp4olud18r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "staclogintest.kr.hs.mirim.alone_test",
+            "certificate_hash": "1ed6a1ac2510c8f9428a99c3a67878224f46b49d"
+          }
+        },
+        {
+          "client_id": "727206740213-uf7tki5an0mnobqhhbghb3kq6bv7itic.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBab8agWp674Cgf1JSSHlINMKT5oDe8cU4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "727206740213-uf7tki5an0mnobqhhbghb3kq6bv7itic.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

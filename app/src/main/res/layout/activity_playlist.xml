@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaylistActivity"
+    android:orientation="vertical"
+    android:background="#eee"
+    >
+
+    <TextView
+        android:id="@+id/my_playlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="나의 플레이리스트"
+        android:textColor="#000"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20px"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/playlist_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/my_playlist"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_new_playlist"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@drawable/btn_add_playlist"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

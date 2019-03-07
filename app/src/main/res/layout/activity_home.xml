@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="@drawable/home_back"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userImg"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/circleimageview_border"
+            android:padding="3.5dp" />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:columnCount="2"
+            >
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            android:text="닉네임"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_column="0"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="3dp"
+            android:text="@아이디"
+            android:textSize="12sp"
+            android:layout_column="0"
+            android:layout_row="1"
+        />
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="28dp"
+            android:layout_height="27dp"
+            android:background="@drawable/gear"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="8dp"
+            />
+
+        </GridLayout>
+    </LinearLayout>
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tabStripEnabled="false"
+                />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <LinearLayout
+                    android:id="@+id/tab_view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30sp"
+                        android:textColor="#0000FF"
+                        android:text="프로그래밍 언어"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30sp"
+                        android:textColor="#00FF00"
+                        android:text="프로그래밍 기술"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/tab_view3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textSize="30sp"
+                        android:textColor="#FF0000"
+                        android:text="프로그래밍 실습 예제"/>
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </TabHost>
+
+</LinearLayout>
